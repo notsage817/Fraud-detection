@@ -18,7 +18,13 @@ A fraudster will try to abuse the card as much as possible in a short period of 
   3. Split the rest of data into training and testing dataset to build the best model, including bootstrap, bagging and cross validation
   4. Test the model on OOT data after finalizing it
 + Create expert variables
+  + Fraud detection features could be created by **RFM principle**
+    + Recency - How recently did the customer purchase - Time passed since last purchase
+    + Frequency - How often do they purchase - Total number of transactions
+    + Monetary - How much do they spend - Amount of transactions
 + Conduct feature engineering
+## Data Preprocessing
+
 ## Algorithms
 ### Random Forest
 ### Support Vector Machine
