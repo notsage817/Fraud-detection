@@ -6,9 +6,11 @@ The potential tax fraud is defined as people underpaying tax or otherwise misrep
 ## Explore the data
 The data is named as 'NY property data.csv', containing 1070994 records and 32 columns for each record.
 Before preprocessing the dataset, it's necessary to understand the representation and distribution of each column thoroughly.
-
+### Data Processing
+#### Create Variables
+#### Feature Selection
 ## Proposal
-1.
+1. 
 2.
 3.
 4.
