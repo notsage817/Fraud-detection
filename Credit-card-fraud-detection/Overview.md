@@ -17,12 +17,18 @@ A fraudster will try to abuse the card as much as possible in a short period of 
   2. Separate the Out of Time data and put it away till the end
   3. Split the rest of data into training and testing dataset to build the best model, including bootstrap, bagging and cross validation
   4. Test the model on OOT data after finalizing it
-+ Create expert variables
-  + Fraud detection features could be created by **RFM principle**
++ Feature Engineering
+  1. Fraud detection features could be created by **RFM principle**
     + Recency - How recently did the customer purchase - Time passed since last purchase
+      Days passed with same (card/merchant/card at the merchant/card in the zip code/card in the state) since last purchase
     + Frequency - How often do they purchase - Total number of transactions
+      Number of transactions with this (card/merchant/card at the merchant/card in the zip code/card in the state) over the past (0/1/3/7/14/30) days
     + Monetary - How much do they spend - Amount of transactions
-+ Conduct feature engineering
+      (Average/maximum/median/total) amount &(ratio of actual amount to (Average/maximum/median/total) amount) at (card/merchant/card at the merchant/card in the zip code/card in the state) over the past (0/1/3/7/14/30) days
+  2. Besides, there shoule be velocity change variables
+    + The (number/amount) of transactions with same (card/merchant) over the past (0/1) days
+    + Average daily (number/amount) of transactions with same (card/merchant) over the past (7/14/30) days
+
 ## Data Preprocessing
 
 ## Algorithms
